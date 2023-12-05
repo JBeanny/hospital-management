@@ -96,6 +96,10 @@ namespace HospitalManagement
             ReservedHeadingPanel.Hide();
             RightPanel.Controls.Clear();
             currentPage = "Patients";
+
+            // Add Patient Data
+            AddItem("Bormey", "", "patient.png", "Bormey");
+            AddItem("Lisa", "", "patient.png", "Lisa");
         }
 
         private void SearchBox_KeyUp(object sender, KeyEventArgs e)
@@ -124,6 +128,15 @@ namespace HospitalManagement
                 {
                     AddDoctorForm = new AddDoctorForm();
                     AddDoctorForm.Show();
+                }
+            }
+
+            if (currentPage == "Patients")
+            {
+                if (AddPatientForm == null || AddPatientForm.IsDisposed)
+                {
+                    AddPatientForm = new AddPatientForm();
+                    AddPatientForm.Show();
                 }
             }
         }
