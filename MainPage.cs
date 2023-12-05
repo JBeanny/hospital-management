@@ -22,14 +22,46 @@ namespace HospitalManagement
         ItemCard currentSelectItem = null;
         private DoctorService DoctorService = new DoctorService();
 
+        // selected
+        private Doctor selectedDoctor = null;
+
         //List<>
 
         public HomePage()
         {
             InitializeComponent();
+            EditButton.Click += handleEdit;
         }
 
-        private void AddItem(string title, string description, string picture, string searchText)
+        private void handleDelete(object sender, EventArgs e)
+        {
+            if (selectedDoctor == null)
+            {
+                MessageBox.Show("No doctor is selected", "Edit Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            Doctor existedDoctor = DoctorService.getDoctor(selectedDoctor.Id);
+
+            if (existedDoctor == null)
+            {
+                MessageBox.Show("Doctor is not found", "Failed to find doctor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DoctorService.deleteDoctor(existedDoctor.Id);
+        }
+
+        private void handleEdit(object sender, EventArgs e)
+        {
+            if (AddDoctorForm == null || AddDoctorForm.IsDisposed)
+            {
+                AddDoctorForm = new AddDoctorForm(selectedDoctor);
+                AddDoctorForm.Show();
+            }
+        }
+
+        private void AddItem(string title, string description, string picture, string searchText, dynamic Object)
         {
             ItemCard item = new ItemCard()
             {
@@ -48,6 +80,7 @@ namespace HospitalManagement
 
                 item.BackColor = ColorTranslator.FromHtml("#a7f3d0");
                 this.currentSelectItem = item;
+                selectedDoctor = Object;
                 RightPanel.Controls.Add(new ReservedRoomList() { Date = "2023-12-05 12:30:00" });
             };
             ListPanel.Controls.Add(item);
@@ -62,15 +95,15 @@ namespace HospitalManagement
             currentPage = "Rooms";
 
             // Add Room Data
-            AddItem("Room", "Room: #101", "room.jpg", "#101");
-            AddItem("Room", "Room: #102", "room.jpg", "#102");
+            //AddItem("Room", "Room: #101", "room.jpg", "#101");
+            //AddItem("Room", "Room: #102", "room.jpg", "#102");
         }
 
         private void initialLoadData(object sender, EventArgs e)
         {
             timer1.Stop();
-            AddItem("Room", "#101", "room.jpg", "#101");
-            AddItem("Room", "#101", "room.jpg", "#101");
+            //AddItem("Room", "#101", "room.jpg", "#101");
+            //AddItem("Room", "#101", "room.jpg", "#101");
         }
 
         private void DoctorMenuButton(object sender, EventArgs e)
@@ -85,7 +118,7 @@ namespace HospitalManagement
             Doctors = DoctorService.getDoctors();
             Doctors.ForEach(doctor =>
             {
-                AddItem(doctor.name, doctor.gender, "doctor.png", doctor.specialty);
+                AddItem(doctor.name, doctor.gender, "doctor.png", doctor.specialty, doctor);
             });
         }
 
@@ -98,8 +131,8 @@ namespace HospitalManagement
             currentPage = "Patients";
 
             // Add Patient Data
-            AddItem("Bormey", "", "patient.png", "Bormey");
-            AddItem("Lisa", "", "patient.png", "Lisa");
+            //AddItem("Bormey", "", "patient.png", "Bormey");
+            //AddItem("Lisa", "", "patient.png", "Lisa");
         }
 
         private void SearchBox_KeyUp(object sender, KeyEventArgs e)
