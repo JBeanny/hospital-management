@@ -215,7 +215,7 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.Controls.Add(this.panel3);
             this.splitContainer1.Size = new System.Drawing.Size(844, 561);
-            this.splitContainer1.SplitterDistance = 624;
+            this.splitContainer1.SplitterDistance = 627;
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -224,7 +224,7 @@
             this.ListPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListPanel.Location = new System.Drawing.Point(0, 62);
             this.ListPanel.Name = "ListPanel";
-            this.ListPanel.Size = new System.Drawing.Size(624, 499);
+            this.ListPanel.Size = new System.Drawing.Size(627, 499);
             this.ListPanel.TabIndex = 0;
             // 
             // panel4
@@ -236,7 +236,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(16);
-            this.panel4.Size = new System.Drawing.Size(624, 62);
+            this.panel4.Size = new System.Drawing.Size(627, 62);
             this.panel4.TabIndex = 1;
             // 
             // iconPictureBox2
@@ -275,7 +275,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(8);
-            this.panel3.Size = new System.Drawing.Size(219, 561);
+            this.panel3.Size = new System.Drawing.Size(216, 561);
             this.panel3.TabIndex = 0;
             // 
             // RightPanel
@@ -285,7 +285,7 @@
             this.RightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.RightPanel.Location = new System.Drawing.Point(8, 86);
             this.RightPanel.Name = "RightPanel";
-            this.RightPanel.Size = new System.Drawing.Size(203, 467);
+            this.RightPanel.Size = new System.Drawing.Size(200, 467);
             this.RightPanel.TabIndex = 5;
             // 
             // ReservedHeadingPanel
@@ -296,7 +296,7 @@
             this.ReservedHeadingPanel.Location = new System.Drawing.Point(8, 51);
             this.ReservedHeadingPanel.Name = "ReservedHeadingPanel";
             this.ReservedHeadingPanel.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            this.ReservedHeadingPanel.Size = new System.Drawing.Size(203, 35);
+            this.ReservedHeadingPanel.Size = new System.Drawing.Size(200, 35);
             this.ReservedHeadingPanel.TabIndex = 4;
             // 
             // label2
@@ -331,7 +331,7 @@
             this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(8, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 20);
+            this.label1.Size = new System.Drawing.Size(200, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "#101";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -342,7 +342,7 @@
             this.RightLabel.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RightLabel.Location = new System.Drawing.Point(8, 8);
             this.RightLabel.Name = "RightLabel";
-            this.RightLabel.Size = new System.Drawing.Size(203, 23);
+            this.RightLabel.Size = new System.Drawing.Size(200, 23);
             this.RightLabel.TabIndex = 0;
             this.RightLabel.Text = "Room";
             // 

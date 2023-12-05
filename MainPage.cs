@@ -1,6 +1,7 @@
 ﻿using HospitalManagement.Components;
 using HospitalManagement.Forms;
 using HospitalManagement.Models;
+using HospitalManagement.Services;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -19,6 +20,7 @@ namespace HospitalManagement
         List<Consultant> Consultants;
         string currentPage = "Rooms";
         ItemCard currentSelectItem = null;
+        private DoctorService DoctorService = new DoctorService();
 
         //List<>
 
@@ -80,8 +82,11 @@ namespace HospitalManagement
             currentPage = "Doctors";
 
             // Add Doctor Data
-            AddItem("Sotharoth", "Room: #101", "doctor.png", "Sotharoth");
-            AddItem("Reachsey", "Room: #102", "doctor.png", "Reachsey");
+            Doctors = DoctorService.getDoctors();
+            Doctors.ForEach(doctor =>
+            {
+                AddItem(doctor.name, doctor.gender, "doctor.png", doctor.specialty);
+            });
         }
 
         private void PatientMenuButton(object sender, EventArgs e)
