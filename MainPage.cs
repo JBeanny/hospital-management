@@ -46,7 +46,6 @@ namespace HospitalManagement
 
                 item.BackColor = ColorTranslator.FromHtml("#a7f3d0");
                 this.currentSelectItem = item;
-                RightPanel.Controls.Add(new ReservedRoomList() { Date = "2023-12-05 12:30:00" });
             };
             ListPanel.Controls.Add(item);
         }
@@ -67,6 +66,8 @@ namespace HospitalManagement
         private void initialLoadData(object sender, EventArgs e)
         {
             timer1.Stop();
+            AddItem("Room", "#101", "room.jpg", "#101");
+            AddItem("Room", "#101", "room.jpg", "#101");
             AddItem("Room", "#101", "room.jpg", "#101");
             AddItem("Room", "#101", "room.jpg", "#101");
         }
@@ -110,7 +111,7 @@ namespace HospitalManagement
         {
             if (currentPage == "Rooms")
             {
-                if (AddDoctorForm == null || AddDoctorForm.IsDisposed)
+                if (AddConsultantForm == null || AddConsultantForm.IsDisposed)
                 {
                     AddConsultantForm = new AddConsultantForm(Doctors, Patients, Rooms);
                     AddConsultantForm.Show();

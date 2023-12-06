@@ -159,6 +159,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\Information.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\ReservedRoomList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -202,6 +208,9 @@
     <Compile Include="Models\Room.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Components\Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\ReservedRoomList.resx">
       <DependentUpon>ReservedRoomList.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +264,9 @@
     <Analyzer Include="packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\patient.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\doctor.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>

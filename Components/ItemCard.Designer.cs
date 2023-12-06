@@ -44,16 +44,16 @@
             this.panel1.Location = new System.Drawing.Point(8, 108);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(0, 8, 0, 8);
-            this.panel1.Size = new System.Drawing.Size(134, 41);
+            this.panel1.Size = new System.Drawing.Size(134, 52);
             this.panel1.TabIndex = 1;
             // 
             // description
             // 
             this.description.Dock = System.Windows.Forms.DockStyle.Top;
-            this.description.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.description.Location = new System.Drawing.Point(0, 23);
+            this.description.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.description.Location = new System.Drawing.Point(0, 27);
             this.description.Name = "description";
-            this.description.Size = new System.Drawing.Size(134, 13);
+            this.description.Size = new System.Drawing.Size(134, 17);
             this.description.TabIndex = 1;
             this.description.Text = "#101";
             this.description.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -62,10 +62,10 @@
             // 
             this.title.AutoSize = true;
             this.title.Dock = System.Windows.Forms.DockStyle.Top;
-            this.title.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.title.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title.Location = new System.Drawing.Point(0, 8);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(40, 15);
+            this.title.Size = new System.Drawing.Size(51, 19);
             this.title.TabIndex = 0;
             this.title.Text = "Room";
             // 

@@ -30,6 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,6 +45,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,32 +62,20 @@
             this.label5 = new System.Windows.Forms.Label();
             this.ConfirmBtn = new System.Windows.Forms.Button();
             this.CloseBtn = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -113,6 +113,72 @@
             this.splitContainer1.SplitterDistance = 372;
             this.splitContainer1.SplitterWidth = 16;
             this.splitContainer1.TabIndex = 3;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.textBox5);
+            this.panel9.Controls.Add(this.label10);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(0, 200);
+            this.panel9.Margin = new System.Windows.Forms.Padding(0);
+            this.panel9.Name = "panel9";
+            this.panel9.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel9.Size = new System.Drawing.Size(372, 50);
+            this.panel9.TabIndex = 6;
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.textBox5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(98, 8);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(274, 20);
+            this.textBox5.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label10.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(0, 8);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(88, 19);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Sicknesses";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.textBox3);
+            this.panel7.Controls.Add(this.label8);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(0, 150);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel7.Size = new System.Drawing.Size(372, 50);
+            this.panel7.TabIndex = 5;
+            // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.textBox3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(98, 8);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(274, 20);
+            this.textBox3.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label8.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(0, 8);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 19);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Height";
             // 
             // panel3
             // 
@@ -214,6 +280,78 @@
             this.label3.Size = new System.Drawing.Size(51, 19);
             this.label3.TabIndex = 0;
             this.label3.Text = "Name";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.textBox7);
+            this.panel10.Controls.Add(this.label11);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(0, 200);
+            this.panel10.Margin = new System.Windows.Forms.Padding(0);
+            this.panel10.Name = "panel10";
+            this.panel10.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel10.Size = new System.Drawing.Size(372, 50);
+            this.panel10.TabIndex = 7;
+            // 
+            // textBox7
+            // 
+            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.textBox7.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(98, 8);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(274, 20);
+            this.textBox7.TabIndex = 1;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label11.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(0, 8);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(69, 19);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Allergies";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.comboBox2);
+            this.panel8.Controls.Add(this.label9);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel8.Location = new System.Drawing.Point(0, 150);
+            this.panel8.Margin = new System.Windows.Forms.Padding(0);
+            this.panel8.Name = "panel8";
+            this.panel8.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.panel8.Size = new System.Drawing.Size(372, 50);
+            this.panel8.TabIndex = 5;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "AB",
+            "O"});
+            this.comboBox2.Location = new System.Drawing.Point(266, 8);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(106, 27);
+            this.comboBox2.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label9.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(0, 8);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(88, 19);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Blood Type";
             // 
             // panel6
             // 
@@ -347,144 +485,6 @@
             this.CloseBtn.UseVisualStyleBackColor = false;
             this.CloseBtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.textBox3);
-            this.panel7.Controls.Add(this.label8);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 150);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.panel7.Size = new System.Drawing.Size(372, 50);
-            this.panel7.TabIndex = 5;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(98, 8);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(274, 20);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label8.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(0, 8);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 19);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Height";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.comboBox2);
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 150);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.panel8.Size = new System.Drawing.Size(372, 50);
-            this.panel8.TabIndex = 5;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label9.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(0, 8);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 19);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Blood Type";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "AB",
-            "O"});
-            this.comboBox2.Location = new System.Drawing.Point(266, 8);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(106, 27);
-            this.comboBox2.TabIndex = 3;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.textBox5);
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 200);
-            this.panel9.Margin = new System.Windows.Forms.Padding(0);
-            this.panel9.Name = "panel9";
-            this.panel9.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.panel9.Size = new System.Drawing.Size(372, 50);
-            this.panel9.TabIndex = 6;
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(98, 8);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(274, 20);
-            this.textBox5.TabIndex = 1;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label10.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(0, 8);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 19);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Sicknesses";
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.textBox7);
-            this.panel10.Controls.Add(this.label11);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 200);
-            this.panel10.Margin = new System.Windows.Forms.Padding(0);
-            this.panel10.Name = "panel10";
-            this.panel10.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.panel10.Size = new System.Drawing.Size(372, 50);
-            this.panel10.TabIndex = 7;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox7.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(98, 8);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(274, 20);
-            this.textBox7.TabIndex = 1;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label11.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(0, 8);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(69, 19);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Allergies";
-            // 
             // AddPatientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -503,26 +503,26 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
