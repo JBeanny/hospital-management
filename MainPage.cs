@@ -36,21 +36,53 @@ namespace HospitalManagement
 
         private void handleDelete(object sender, EventArgs e)
         {
-            if (selectedModel == null)
+            if (currentPage == "Rooms")
             {
-                MessageBox.Show("No doctor is selected", "Edit Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (selectedModel == null)
+                {
+                    MessageBox.Show("No consultant is selected", "Edit Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                Consultant existedConsultant = ConsultantService.getConsultation(selectedModel.Id);
+
+                if (existedConsultant == null)
+                {
+                    MessageBox.Show("Consultant is not found", "Failed to find consultant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                DoctorService.deleteDoctor(existedConsultant.Id);
             }
 
-            Doctor existedDoctor = DoctorService.getDoctor(selectedModel.Id);
-
-            if (existedDoctor == null)
+            if (currentPage == "Doctors")
             {
-                MessageBox.Show("Doctor is not found", "Failed to find doctor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                if (selectedModel == null)
+                {
+                    MessageBox.Show("No doctor is selected", "Edit Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                Doctor existedDoctor = DoctorService.getDoctor(selectedModel.Id);
+
+                if (existedDoctor == null)
+                {
+                    MessageBox.Show("Doctor is not found", "Failed to find doctor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                DoctorService.deleteDoctor(existedDoctor.Id);
             }
 
-            DoctorService.deleteDoctor(existedDoctor.Id);
+            // implement
+            if (currentPage == "Patients")
+            {
+                if (AddPatientForm == null || AddPatientForm.IsDisposed)
+                {
+                    AddPatientForm = new AddPatientForm(selectedModel);
+                    AddPatientForm.Show();
+                }
+            }
         }
 
         private void handleEdit(object sender, EventArgs e)
