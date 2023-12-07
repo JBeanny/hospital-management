@@ -44,12 +44,12 @@
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.SearchBox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.RightPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.ReservedHeadingPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.EditButton = new FontAwesome.Sharp.IconButton();
             this.RightLabel = new System.Windows.Forms.Label();
-            this.RightPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -72,7 +72,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.panel1.Padding = new System.Windows.Forms.Padding(0, 16, 0, 0);
             this.panel1.Size = new System.Drawing.Size(250, 561);
             this.panel1.TabIndex = 0;
             // 
@@ -82,10 +82,10 @@
             this.panel2.Controls.Add(this.iconButton3);
             this.panel2.Controls.Add(this.iconButton2);
             this.panel2.Controls.Add(this.iconButton1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 83);
             this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(0, 16, 0, 16);
+            this.panel2.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
             this.panel2.Size = new System.Drawing.Size(250, 478);
             this.panel2.TabIndex = 2;
             // 
@@ -99,7 +99,7 @@
             this.Add.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.Add.IconColor = System.Drawing.Color.White;
             this.Add.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Add.Location = new System.Drawing.Point(0, 408);
+            this.Add.Location = new System.Drawing.Point(0, 424);
             this.Add.Margin = new System.Windows.Forms.Padding(0);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(250, 54);
@@ -122,7 +122,7 @@
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 32;
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 116);
+            this.iconButton3.Location = new System.Drawing.Point(0, 108);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
             this.iconButton3.Size = new System.Drawing.Size(250, 50);
@@ -147,7 +147,7 @@
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 32;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 66);
+            this.iconButton2.Location = new System.Drawing.Point(0, 58);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
             this.iconButton2.Size = new System.Drawing.Size(250, 50);
@@ -172,7 +172,7 @@
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 32;
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 16);
+            this.iconButton1.Location = new System.Drawing.Point(0, 8);
             this.iconButton1.Name = "iconButton1";
             this.iconButton1.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
             this.iconButton1.Size = new System.Drawing.Size(250, 50);
@@ -216,7 +216,7 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.Controls.Add(this.panel3);
             this.splitContainer1.Size = new System.Drawing.Size(844, 561);
-            this.splitContainer1.SplitterDistance = 609;
+            this.splitContainer1.SplitterDistance = 627;
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -225,7 +225,7 @@
             this.ListPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListPanel.Location = new System.Drawing.Point(0, 62);
             this.ListPanel.Name = "ListPanel";
-            this.ListPanel.Size = new System.Drawing.Size(609, 499);
+            this.ListPanel.Size = new System.Drawing.Size(627, 499);
             this.ListPanel.TabIndex = 0;
             // 
             // panel4
@@ -237,7 +237,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(16);
-            this.panel4.Size = new System.Drawing.Size(609, 62);
+            this.panel4.Size = new System.Drawing.Size(627, 62);
             this.panel4.TabIndex = 1;
             // 
             // iconPictureBox2
@@ -268,16 +268,27 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.RightPanel);
             this.panel3.Controls.Add(this.ReservedHeadingPanel);
             this.panel3.Controls.Add(this.EditButton);
             this.panel3.Controls.Add(this.RightLabel);
-            this.panel3.Controls.Add(this.RightPanel);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(8, 16, 8, 8);
-            this.panel3.Size = new System.Drawing.Size(234, 561);
+            this.panel3.Size = new System.Drawing.Size(216, 561);
             this.panel3.TabIndex = 0;
+            // 
+            // RightPanel
+            // 
+            this.RightPanel.AutoScroll = true;
+            this.RightPanel.AutoSize = true;
+            this.RightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RightPanel.Location = new System.Drawing.Point(8, 115);
+            this.RightPanel.Name = "RightPanel";
+            this.RightPanel.Padding = new System.Windows.Forms.Padding(0, 16, 0, 0);
+            this.RightPanel.Size = new System.Drawing.Size(200, 438);
+            this.RightPanel.TabIndex = 5;
             // 
             // ReservedHeadingPanel
             // 
@@ -287,7 +298,7 @@
             this.ReservedHeadingPanel.Location = new System.Drawing.Point(8, 80);
             this.ReservedHeadingPanel.Name = "ReservedHeadingPanel";
             this.ReservedHeadingPanel.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            this.ReservedHeadingPanel.Size = new System.Drawing.Size(218, 35);
+            this.ReservedHeadingPanel.Size = new System.Drawing.Size(200, 35);
             this.ReservedHeadingPanel.TabIndex = 4;
             // 
             // label2
@@ -332,7 +343,7 @@
             this.EditButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditButton.Location = new System.Drawing.Point(8, 50);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(218, 30);
+            this.EditButton.Size = new System.Drawing.Size(200, 30);
             this.EditButton.TabIndex = 6;
             this.EditButton.Text = "Edit";
             this.EditButton.UseVisualStyleBackColor = false;
@@ -344,20 +355,9 @@
             this.RightLabel.Location = new System.Drawing.Point(8, 16);
             this.RightLabel.Name = "RightLabel";
             this.RightLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
-            this.RightLabel.Size = new System.Drawing.Size(218, 34);
+            this.RightLabel.Size = new System.Drawing.Size(200, 34);
             this.RightLabel.TabIndex = 0;
             this.RightLabel.Text = "Room";
-            // 
-            // RightPanel
-            // 
-            this.RightPanel.AutoScroll = true;
-            this.RightPanel.AutoSize = true;
-            this.RightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RightPanel.Location = new System.Drawing.Point(8, 16);
-            this.RightPanel.Name = "RightPanel";
-            this.RightPanel.Padding = new System.Windows.Forms.Padding(0, 16, 0, 0);
-            this.RightPanel.Size = new System.Drawing.Size(218, 537);
-            this.RightPanel.TabIndex = 5;
             // 
             // HomePage
             // 

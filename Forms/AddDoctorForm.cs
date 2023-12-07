@@ -10,7 +10,6 @@ namespace HospitalManagement.Forms
     public partial class AddDoctorForm : Form
     {
         private DoctorService doctorService = new DoctorService();
-        private Util util = new Util();
         private Doctor DoctorToUpdate = null;
 
         public AddDoctorForm()
@@ -50,7 +49,7 @@ namespace HospitalManagement.Forms
             string specialty = SpecialtyInput.Text;
             string contact = PhoneNumberInput.Text;
 
-            if (util.IsInputNullOrEmpty(name, email, gender, birthdate, specialty, contact))
+            if (Util.AreAnyNullOrEmpty(name, email, gender, birthdate, specialty, contact))
             {
                 MessageBox.Show("Please fill in the required fields", "Validation Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -79,7 +78,7 @@ namespace HospitalManagement.Forms
             string specialty = SpecialtyInput.Text;
             string contact = PhoneNumberInput.Text;
 
-            if (util.IsInputNullOrEmpty(name, email, gender, birthdate, specialty, contact))
+            if (Util.AreAnyNullOrEmpty(name, email, gender, birthdate, specialty, contact))
             {
                 MessageBox.Show("Please fill in the required fields", "Validation Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;

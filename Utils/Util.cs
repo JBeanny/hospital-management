@@ -10,9 +10,9 @@ namespace HospitalManagement.Utils
             return AreAnyNullOrEmpty(name, email, gender, birthdate, specialty, contact);
         }
 
-        public Boolean IsInputNullOrEmpty(string height, string weight, string blood_type, string sicknesses, string allergies)
+        public Boolean IsInputNullOrEmpty(string name, string email, string phonenumber, string gender, string birthdate, string height, string weight, string blood_type, string sicknesses, string allergies)
         {
-            return AreAnyNullOrEmpty(height, weight, blood_type, sicknesses, allergies);
+            return AreAnyNullOrEmpty(name, email, phonenumber, gender, birthdate, height, weight, blood_type, sicknesses, allergies);
         }
 
         public Boolean IsInputNullOrEmpty(string Date, Doctor Doctor, Patient Patient, string Room)
@@ -20,7 +20,7 @@ namespace HospitalManagement.Utils
             return AreAnyNullOrEmpty(Date, Doctor, Patient, Room);
         }
 
-        static bool AreAnyNullOrEmpty(params object[] values)
+        public static bool AreAnyNullOrEmpty(params object[] values)
         {
             foreach (var value in values)
             {
