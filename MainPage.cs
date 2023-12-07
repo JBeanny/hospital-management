@@ -22,6 +22,8 @@ namespace HospitalManagement
         ItemCard currentSelectItem = null;
         private DoctorService DoctorService = new DoctorService();
         private PatientService PatientService = new PatientService();
+        private RoomService RoomService = new RoomService();
+        private ConsultantService ConsultantService = new ConsultantService();
 
         // selected
         private dynamic selectedModel = null;
@@ -57,8 +59,8 @@ namespace HospitalManagement
             {
                 if (AddConsultantForm == null || AddConsultantForm.IsDisposed)
                 {
-                    //AddConsultantForm = new AddConsultantForm(selectedModel);
-                    //AddConsultantForm.Show();
+                    AddConsultantForm = new AddConsultantForm(selectedModel, Doctors, Patients, Rooms);
+                    AddConsultantForm.Show();
                 }
             }
 
@@ -113,19 +115,22 @@ namespace HospitalManagement
             RightLabel.Text = "Room";
             ReservedHeadingPanel.Show();
             currentPage = "Rooms";
+            Consultants = ConsultantService.getConsultations();
 
             // Add Room Data
-            AddItem("Room", "Room: #101", "room.jpg", "#101", new object { });
-            AddItem("Room", "Room: #102", "room.jpg", "#102", new object { });
+            Consultants.ForEach(consultant =>
+            {
+                AddItem(consultant.Room.number, consultant.Date, "room.jpg", consultant.Room.number, consultant);
+            });
         }
 
         private void initialLoadData(object sender, EventArgs e)
         {
             timer1.Stop();
-            Doctors = DoctorService.getDoctors();
-            Patients = PatientService.getPatients();
-            //AddItem("Room", "#101", "room.jpg", "#101");
-            //AddItem("Room", "#101", "room.jpg", "#101");
+            //Doctors = DoctorService.getDoctors();
+            //Patients = PatientService.getPatients();
+            Rooms = RoomService.getRooms();
+            //Consultants = ConsultantService.getConsultations();
         }
 
         private void DoctorMenuButton(object sender, EventArgs e)
@@ -135,6 +140,7 @@ namespace HospitalManagement
             ReservedHeadingPanel.Hide();
             RightPanel.Controls.Clear();
             currentPage = "Doctors";
+            Doctors = DoctorService.getDoctors();
 
             // Add Doctor Data
             Doctors.ForEach(doctor =>
@@ -150,6 +156,7 @@ namespace HospitalManagement
             ReservedHeadingPanel.Hide();
             RightPanel.Controls.Clear();
             currentPage = "Patients";
+            Patients = PatientService.getPatients();
 
             // Add Patient Data
             Patients.ForEach(patient =>

@@ -227,6 +227,7 @@
     <Compile Include="Services\DoctorService.cs" />
     <Compile Include="Services\MongoDBService.cs" />
     <Compile Include="Services\PatientService.cs" />
+    <Compile Include="Services\RoomService.cs" />
     <Compile Include="Utils\Util.cs" />
     <EmbeddedResource Include="Components\ReservedRoomList.resx">
       <DependentUpon>ReservedRoomList.cs</DependentUpon>
