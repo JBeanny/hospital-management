@@ -26,6 +26,7 @@ namespace HospitalManagement.Forms
             if (PatientToUpdate == null)
             {
                 MessageBox.Show("No patient is selected", "Edit Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
             // set value to input fields

@@ -33,9 +33,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Add = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.PatientButton = new FontAwesome.Sharp.IconButton();
+            this.DoctorButton = new FontAwesome.Sharp.IconButton();
+            this.RoomButton = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -48,6 +48,7 @@
             this.ReservedHeadingPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.DeleteButton = new FontAwesome.Sharp.IconButton();
             this.EditButton = new FontAwesome.Sharp.IconButton();
             this.RightLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -79,9 +80,9 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.Add);
-            this.panel2.Controls.Add(this.iconButton3);
-            this.panel2.Controls.Add(this.iconButton2);
-            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Controls.Add(this.PatientButton);
+            this.panel2.Controls.Add(this.DoctorButton);
+            this.panel2.Controls.Add(this.RoomButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 83);
             this.panel2.Name = "panel2";
@@ -107,80 +108,80 @@
             this.Add.UseVisualStyleBackColor = false;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // iconButton3
+            // PatientButton
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(70)))), ((int)(((byte)(229)))));
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.HeartCircleBolt;
-            this.iconButton3.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.IconSize = 32;
-            this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.Location = new System.Drawing.Point(0, 108);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.iconButton3.Size = new System.Drawing.Size(250, 50);
-            this.iconButton3.TabIndex = 3;
-            this.iconButton3.Text = "             Patients";
-            this.iconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton3.UseVisualStyleBackColor = false;
-            this.iconButton3.Click += new System.EventHandler(this.PatientMenuButton);
+            this.PatientButton.BackColor = System.Drawing.Color.Transparent;
+            this.PatientButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PatientButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PatientButton.FlatAppearance.BorderSize = 0;
+            this.PatientButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(70)))), ((int)(((byte)(229)))));
+            this.PatientButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PatientButton.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.PatientButton.IconChar = FontAwesome.Sharp.IconChar.HeartCircleBolt;
+            this.PatientButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.PatientButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.PatientButton.IconSize = 32;
+            this.PatientButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PatientButton.Location = new System.Drawing.Point(0, 108);
+            this.PatientButton.Name = "PatientButton";
+            this.PatientButton.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.PatientButton.Size = new System.Drawing.Size(250, 50);
+            this.PatientButton.TabIndex = 3;
+            this.PatientButton.Text = "             Patients";
+            this.PatientButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.PatientButton.UseVisualStyleBackColor = false;
+            this.PatientButton.Click += new System.EventHandler(this.PatientMenuButton);
             // 
-            // iconButton2
+            // DoctorButton
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(70)))), ((int)(((byte)(229)))));
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.Medkit;
-            this.iconButton2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.IconSize = 32;
-            this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.Location = new System.Drawing.Point(0, 58);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.iconButton2.Size = new System.Drawing.Size(250, 50);
-            this.iconButton2.TabIndex = 2;
-            this.iconButton2.Text = "             Doctors";
-            this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton2.UseVisualStyleBackColor = false;
-            this.iconButton2.Click += new System.EventHandler(this.DoctorMenuButton);
+            this.DoctorButton.BackColor = System.Drawing.Color.Transparent;
+            this.DoctorButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoctorButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DoctorButton.FlatAppearance.BorderSize = 0;
+            this.DoctorButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(70)))), ((int)(((byte)(229)))));
+            this.DoctorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DoctorButton.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoctorButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.DoctorButton.IconChar = FontAwesome.Sharp.IconChar.Medkit;
+            this.DoctorButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.DoctorButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.DoctorButton.IconSize = 32;
+            this.DoctorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DoctorButton.Location = new System.Drawing.Point(0, 58);
+            this.DoctorButton.Name = "DoctorButton";
+            this.DoctorButton.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.DoctorButton.Size = new System.Drawing.Size(250, 50);
+            this.DoctorButton.TabIndex = 2;
+            this.DoctorButton.Text = "             Doctors";
+            this.DoctorButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DoctorButton.UseVisualStyleBackColor = false;
+            this.DoctorButton.Click += new System.EventHandler(this.DoctorMenuButton);
             // 
-            // iconButton1
+            // RoomButton
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(70)))), ((int)(((byte)(229)))));
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Bed;
-            this.iconButton1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 32;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 8);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
-            this.iconButton1.Size = new System.Drawing.Size(250, 50);
-            this.iconButton1.TabIndex = 1;
-            this.iconButton1.Text = "             Rooms";
-            this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.RoomMenuButton);
+            this.RoomButton.BackColor = System.Drawing.Color.Transparent;
+            this.RoomButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RoomButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.RoomButton.FlatAppearance.BorderSize = 0;
+            this.RoomButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(70)))), ((int)(((byte)(229)))));
+            this.RoomButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RoomButton.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoomButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.RoomButton.IconChar = FontAwesome.Sharp.IconChar.Bed;
+            this.RoomButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
+            this.RoomButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.RoomButton.IconSize = 32;
+            this.RoomButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RoomButton.Location = new System.Drawing.Point(0, 8);
+            this.RoomButton.Name = "RoomButton";
+            this.RoomButton.Padding = new System.Windows.Forms.Padding(16, 0, 0, 0);
+            this.RoomButton.Size = new System.Drawing.Size(250, 50);
+            this.RoomButton.TabIndex = 1;
+            this.RoomButton.Text = "             Rooms";
+            this.RoomButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RoomButton.UseVisualStyleBackColor = false;
+            this.RoomButton.Click += new System.EventHandler(this.RoomMenuButton);
             // 
             // pictureBox1
             // 
@@ -216,7 +217,7 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.Controls.Add(this.panel3);
             this.splitContainer1.Size = new System.Drawing.Size(844, 561);
-            this.splitContainer1.SplitterDistance = 627;
+            this.splitContainer1.SplitterDistance = 607;
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -225,7 +226,7 @@
             this.ListPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListPanel.Location = new System.Drawing.Point(0, 62);
             this.ListPanel.Name = "ListPanel";
-            this.ListPanel.Size = new System.Drawing.Size(627, 499);
+            this.ListPanel.Size = new System.Drawing.Size(607, 499);
             this.ListPanel.TabIndex = 0;
             // 
             // panel4
@@ -237,7 +238,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(16);
-            this.panel4.Size = new System.Drawing.Size(627, 62);
+            this.panel4.Size = new System.Drawing.Size(607, 62);
             this.panel4.TabIndex = 1;
             // 
             // iconPictureBox2
@@ -270,13 +271,14 @@
             // 
             this.panel3.Controls.Add(this.RightPanel);
             this.panel3.Controls.Add(this.ReservedHeadingPanel);
+            this.panel3.Controls.Add(this.DeleteButton);
             this.panel3.Controls.Add(this.EditButton);
             this.panel3.Controls.Add(this.RightLabel);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(8, 16, 8, 8);
-            this.panel3.Size = new System.Drawing.Size(216, 561);
+            this.panel3.Size = new System.Drawing.Size(236, 561);
             this.panel3.TabIndex = 0;
             // 
             // RightPanel
@@ -284,10 +286,10 @@
             this.RightPanel.AutoScroll = true;
             this.RightPanel.AutoSize = true;
             this.RightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RightPanel.Location = new System.Drawing.Point(8, 115);
+            this.RightPanel.Location = new System.Drawing.Point(8, 145);
             this.RightPanel.Name = "RightPanel";
             this.RightPanel.Padding = new System.Windows.Forms.Padding(0, 16, 0, 0);
-            this.RightPanel.Size = new System.Drawing.Size(200, 438);
+            this.RightPanel.Size = new System.Drawing.Size(220, 408);
             this.RightPanel.TabIndex = 5;
             // 
             // ReservedHeadingPanel
@@ -295,10 +297,10 @@
             this.ReservedHeadingPanel.Controls.Add(this.label2);
             this.ReservedHeadingPanel.Controls.Add(this.iconPictureBox1);
             this.ReservedHeadingPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ReservedHeadingPanel.Location = new System.Drawing.Point(8, 80);
+            this.ReservedHeadingPanel.Location = new System.Drawing.Point(8, 110);
             this.ReservedHeadingPanel.Name = "ReservedHeadingPanel";
             this.ReservedHeadingPanel.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            this.ReservedHeadingPanel.Size = new System.Drawing.Size(200, 35);
+            this.ReservedHeadingPanel.Size = new System.Drawing.Size(220, 35);
             this.ReservedHeadingPanel.TabIndex = 4;
             // 
             // label2
@@ -327,6 +329,29 @@
             this.iconPictureBox1.TabIndex = 2;
             this.iconPictureBox1.TabStop = false;
             // 
+            // DeleteButton
+            // 
+            this.DeleteButton.AutoSize = true;
+            this.DeleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(202)))), ((int)(((byte)(202)))));
+            this.DeleteButton.Dock = System.Windows.Forms.DockStyle.Top;
+            this.DeleteButton.FlatAppearance.BorderSize = 0;
+            this.DeleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DeleteButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.DeleteButton.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.DeleteButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
+            this.DeleteButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.DeleteButton.IconSize = 24;
+            this.DeleteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DeleteButton.Location = new System.Drawing.Point(8, 80);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(8);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(220, 30);
+            this.DeleteButton.TabIndex = 7;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = false;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
             // EditButton
             // 
             this.EditButton.AutoSize = true;
@@ -343,7 +368,7 @@
             this.EditButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditButton.Location = new System.Drawing.Point(8, 50);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(200, 30);
+            this.EditButton.Size = new System.Drawing.Size(220, 30);
             this.EditButton.TabIndex = 6;
             this.EditButton.Text = "Edit";
             this.EditButton.UseVisualStyleBackColor = false;
@@ -355,7 +380,7 @@
             this.RightLabel.Location = new System.Drawing.Point(8, 16);
             this.RightLabel.Name = "RightLabel";
             this.RightLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
-            this.RightLabel.Size = new System.Drawing.Size(200, 34);
+            this.RightLabel.Size = new System.Drawing.Size(220, 34);
             this.RightLabel.TabIndex = 0;
             this.RightLabel.Text = "Room";
             // 
@@ -398,10 +423,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton RoomButton;
         private System.Windows.Forms.Panel panel2;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
+        private FontAwesome.Sharp.IconButton PatientButton;
+        private FontAwesome.Sharp.IconButton DoctorButton;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.FlowLayoutPanel ListPanel;
@@ -416,6 +441,7 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconButton Add;
         private FontAwesome.Sharp.IconButton EditButton;
+        private FontAwesome.Sharp.IconButton DeleteButton;
     }
 }
 

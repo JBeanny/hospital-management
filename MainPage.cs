@@ -14,6 +14,7 @@ namespace HospitalManagement
         AddDoctorForm AddDoctorForm = null;
         AddPatientForm AddPatientForm = null;
         AddConsultantForm AddConsultantForm = null;
+        DeleteForm DeleteForm = null;
         public static List<Room> Rooms;
         public static List<Doctor> Doctors;
         public static List<Patient> Patients;
@@ -30,25 +31,6 @@ namespace HospitalManagement
         {
             InitializeComponent();
             EditButton.Click += handleEdit;
-        }
-
-        private void handleDelete(object sender, EventArgs e)
-        {
-            if (selectedModel == null)
-            {
-                MessageBox.Show("No doctor is selected", "Edit Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            Doctor existedDoctor = DoctorService.getDoctor(selectedModel.Id);
-
-            if (existedDoctor == null)
-            {
-                MessageBox.Show("Doctor is not found", "Failed to find doctor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
-            }
-
-            DoctorService.deleteDoctor(existedDoctor.Id);
         }
 
         private void handleEdit(object sender, EventArgs e)
@@ -101,22 +83,73 @@ namespace HospitalManagement
                 item.BackColor = ColorTranslator.FromHtml("#a7f3d0");
                 this.currentSelectItem = item;
                 selectedModel = Object;
-                //RightPanel.Controls.Add(new ReservedRoomList() { Date = "2023-12-05 12:30:00" });
+                if (currentPage == "Rooms")
+                {
+
+                }
+                if (currentPage == "Doctors")
+                {
+
+                }
+                if (currentPage == "Patients")
+                {
+                    Patient patient = (Patient)selectedModel;
+                    Information information = new Information();
+
+                    information.InformationText = "Id: " + patient.Id.ToString() + "\n";
+                    information.InformationText += "Name: " + patient.name + "\n";
+                    information.InformationText += "Email: " + patient.email + "\n";
+                    information.InformationText += "Gender: " + patient.gender + "\n";
+                    information.InformationText += "Birth Date: " + patient.birth_date + "\n";
+                    information.InformationText += "Phone Number: " + patient.phone_number + "\n";
+                    information.InformationText += "Weight: " + patient.weight + "\n";
+                    information.InformationText += "Height: " + patient.height + "\n";
+                    information.InformationText += "Blood Type: " + patient.blood_type + "\n";
+                    information.InformationText += "Sicknesses: " + patient.sicknesses + "\n";
+                    information.InformationText += "Allergies: " + patient.allergies + "\n";
+                    RightPanel.Controls.Add(information);
+                }
             };
             ListPanel.Controls.Add(item);
         }
 
-        private void RoomMenuButton(object sender, EventArgs e)
+        private void ActiveMenu()
         {
-            ListPanel.Controls.Clear();
-            RightPanel.Controls.Clear();
-            RightLabel.Text = "Room";
-            ReservedHeadingPanel.Show();
-            currentPage = "Rooms";
+            if (currentPage == "Rooms")
+            {
+                ListPanel.Controls.Clear();
+                RightPanel.Controls.Clear();
+                RightLabel.Text = "Room";
+                ReservedHeadingPanel.Show();
 
-            // Add Room Data
-            AddItem("Room", "Room: #101", "room.jpg", "#101", new object { });
-            AddItem("Room", "Room: #102", "room.jpg", "#102", new object { });
+                RoomButton.BackColor = ColorTranslator.FromHtml("#4f46e5");
+                DoctorButton.BackColor = ColorTranslator.FromHtml("#6366f1");
+                PatientButton.BackColor = ColorTranslator.FromHtml("#6366f1");
+            }
+
+            if (currentPage == "Doctors")
+            {
+                ListPanel.Controls.Clear();
+                RightLabel.Text = "Doctors";
+                ReservedHeadingPanel.Hide();
+                RightPanel.Controls.Clear();
+
+                RoomButton.BackColor = ColorTranslator.FromHtml("#6366f1");
+                DoctorButton.BackColor = ColorTranslator.FromHtml("#4f46e5");
+                PatientButton.BackColor = ColorTranslator.FromHtml("#6366f1");
+            }
+
+            if (currentPage == "Patients")
+            {
+                ListPanel.Controls.Clear();
+                RightLabel.Text = "Patients";
+                ReservedHeadingPanel.Hide();
+                RightPanel.Controls.Clear();
+
+                RoomButton.BackColor = ColorTranslator.FromHtml("#6366f1");
+                DoctorButton.BackColor = ColorTranslator.FromHtml("#6366f1");
+                PatientButton.BackColor = ColorTranslator.FromHtml("#4f46e5");
+            }
         }
 
         private void initialLoadData(object sender, EventArgs e)
@@ -127,35 +160,41 @@ namespace HospitalManagement
             //AddItem("Room", "#101", "room.jpg", "#101");
             //AddItem("Room", "#101", "room.jpg", "#101");
         }
+        private void RoomMenuButton(object sender, EventArgs e)
+        {
+            currentPage = "Rooms";
+            ActiveMenu();
+
+            // Add Room Data
+            AddItem("Room", "Room: #101", "room.jpg", "#101", new object { });
+            AddItem("Room", "Room: #102", "room.jpg", "#102", new object { });
+
+        }
 
         private void DoctorMenuButton(object sender, EventArgs e)
         {
-            ListPanel.Controls.Clear();
-            RightLabel.Text = "Doctors";
-            ReservedHeadingPanel.Hide();
-            RightPanel.Controls.Clear();
             currentPage = "Doctors";
+            ActiveMenu();
 
             // Add Doctor Data
             Doctors.ForEach(doctor =>
             {
                 AddItem(doctor.name, doctor.gender, "doctor.png", doctor.name, doctor);
             });
+
         }
 
         private void PatientMenuButton(object sender, EventArgs e)
         {
-            ListPanel.Controls.Clear();
-            RightLabel.Text = "Patients";
-            ReservedHeadingPanel.Hide();
-            RightPanel.Controls.Clear();
             currentPage = "Patients";
+            ActiveMenu();
 
             // Add Patient Data
             Patients.ForEach(patient =>
             {
                 AddItem(patient.name, patient.gender, "patient.png", patient.name, patient);
             });
+
         }
 
         private void SearchBox_KeyUp(object sender, KeyEventArgs e)
@@ -193,6 +232,80 @@ namespace HospitalManagement
                 {
                     AddPatientForm = new AddPatientForm();
                     AddPatientForm.Show();
+                }
+            }
+        }
+
+        private void DeleteButton_Click(object sender, EventArgs e)
+        {
+            if (currentPage == "Rooms")
+            {
+                if (DeleteForm == null || DeleteForm.IsDisposed)
+                {
+                    DeleteForm = new DeleteForm();
+                    DeleteForm.OnDelete += (ss, ee) =>
+                    {
+                        if (selectedModel == null)
+                        {
+                            MessageBox.Show("No consultant is selected", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+                    };
+                    DeleteForm.Show();
+                }
+            }
+
+            if (currentPage == "Doctors")
+            {
+                if (DeleteForm == null || DeleteForm.IsDisposed)
+                {
+                    DeleteForm = new DeleteForm();
+                    DeleteForm.OnDelete += (ss, ee) =>
+                    {
+                        if (selectedModel == null)
+                        {
+                            MessageBox.Show("No doctor is selected", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        Doctor existedDoctor = DoctorService.getDoctor(selectedModel.Id);
+
+                        if (existedDoctor == null)
+                        {
+                            MessageBox.Show("Doctor is not found", "Failed to find doctor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        DoctorService.deleteDoctor(existedDoctor.Id);
+                    };
+                    DeleteForm.Show();
+                }
+            }
+
+            if (currentPage == "Patients")
+            {
+                if (DeleteForm == null || DeleteForm.IsDisposed)
+                {
+                    DeleteForm = new DeleteForm();
+                    DeleteForm.OnDelete += (ss, ee) =>
+                    {
+                        if (selectedModel == null)
+                        {
+                            MessageBox.Show("No patient is selected", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        Patient existedPatient = PatientService.getPatient(selectedModel.Id);
+
+                        if (existedPatient == null)
+                        {
+                            MessageBox.Show("Patient is not found", "Failed to find doctor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        PatientService.deletePatient(existedPatient.Id);
+                    };
+                    DeleteForm.Show();
                 }
             }
         }

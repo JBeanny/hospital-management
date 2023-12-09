@@ -21,6 +21,7 @@ namespace HospitalManagement.Forms
             if (Consultant == null)
             {
                 MessageBox.Show("No doctor is selected", "Edit Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
             // set value to input fields
