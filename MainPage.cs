@@ -23,6 +23,8 @@ namespace HospitalManagement
         ItemCard currentSelectItem = null;
         private DoctorService DoctorService = new DoctorService();
         private PatientService PatientService = new PatientService();
+        private RoomService RoomService = new RoomService();
+        private ConsultantService ConsultantService = new ConsultantService();
 
         // selected
         private dynamic selectedModel = null;
@@ -39,8 +41,8 @@ namespace HospitalManagement
             {
                 if (AddConsultantForm == null || AddConsultantForm.IsDisposed)
                 {
-                    //AddConsultantForm = new AddConsultantForm(selectedModel);
-                    //AddConsultantForm.Show();
+                    AddConsultantForm = new AddConsultantForm(selectedModel, Doctors, Patients, Rooms);
+                    AddConsultantForm.Show();
                 }
             }
 
@@ -157,17 +159,20 @@ namespace HospitalManagement
             timer1.Stop();
             Doctors = DoctorService.getDoctors();
             Patients = PatientService.getPatients();
-            //AddItem("Room", "#101", "room.jpg", "#101");
-            //AddItem("Room", "#101", "room.jpg", "#101");
+            Rooms = RoomService.getRooms();
+            Consultants = ConsultantService.getConsultations();
         }
         private void RoomMenuButton(object sender, EventArgs e)
         {
             currentPage = "Rooms";
             ActiveMenu();
+            Consultants = ConsultantService.getConsultations();
 
             // Add Room Data
-            AddItem("Room", "Room: #101", "room.jpg", "#101", new object { });
-            AddItem("Room", "Room: #102", "room.jpg", "#102", new object { });
+            Consultants.ForEach(consultant =>
+            {
+                AddItem("Room", "Room: " + consultant.Room.number, "room.jpg", consultant.Room.number, consultant);
+            });
 
         }
 
@@ -175,6 +180,7 @@ namespace HospitalManagement
         {
             currentPage = "Doctors";
             ActiveMenu();
+            Doctors = DoctorService.getDoctors();
 
             // Add Doctor Data
             Doctors.ForEach(doctor =>
@@ -188,6 +194,7 @@ namespace HospitalManagement
         {
             currentPage = "Patients";
             ActiveMenu();
+            Patients = PatientService.getPatients();
 
             // Add Patient Data
             Patients.ForEach(patient =>
@@ -250,6 +257,16 @@ namespace HospitalManagement
                             MessageBox.Show("No consultant is selected", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
+
+                        Consultant existedConsultant = ConsultantService.getConsultation(selectedModel.Id);
+
+                        if (existedConsultant == null)
+                        {
+                            MessageBox.Show("Consultant is not found", "Failed to find consultant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        ConsultantService.deleteConsultation(existedConsultant.Id);
                     };
                     DeleteForm.Show();
                 }

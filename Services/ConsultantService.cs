@@ -24,7 +24,7 @@ namespace HospitalManagement.Services
 
         public void deleteConsultation(ObjectId consultationId)
         {
-            _mongoDBService.DeleteDocument<Doctor>(_document, consultationId);
+            _mongoDBService.DeleteDocument<Consultant>(_document, consultationId);
         }
 
         public Consultant getConsultation(ObjectId consultationId)
