@@ -91,7 +91,17 @@ namespace HospitalManagement
                 }
                 if (currentPage == "Doctors")
                 {
+                    Doctor doctor = (Doctor)selectedModel;
+                    Information information = new Information();
 
+                    information.InformationText = "Id: " + doctor.Id.ToString() + "\n";
+                    information.InformationText += "Name: " + doctor.name + "\n";
+                    information.InformationText += "Email: " + doctor.email + "\n";
+                    information.InformationText += "Gender: " + doctor.gender + "\n";
+                    information.InformationText += "Birth Date: " + doctor.birth_date + "\n";
+                    information.InformationText += "Phone Number: " + doctor.phone_number + "\n";
+                    information.InformationText += "Specialty: " + doctor.specialty + "\n";
+                    RightPanel.Controls.Add(information);
                 }
                 if (currentPage == "Patients")
                 {
