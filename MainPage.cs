@@ -97,10 +97,12 @@ namespace HospitalManagement
                 if (currentSelectItem != null)
                 {
                     this.currentSelectItem.BackColor = Color.White;
+                    this.currentSelectItem.ForeColor = ColorTranslator.FromHtml("#000000");
                     RightPanel.Controls.Clear();
                 }
 
-                item.BackColor = ColorTranslator.FromHtml("#a7f3d0");
+                item.BackColor = ColorTranslator.FromHtml("#4f46e5");
+                item.ForeColor = ColorTranslator.FromHtml("#ffffff");
                 this.currentSelectItem = item;
                 selectedModel = Object;
                 if (currentPage == "Rooms")
