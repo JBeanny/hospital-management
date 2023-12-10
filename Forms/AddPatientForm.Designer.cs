@@ -31,34 +31,34 @@
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.SicknessesInput = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.HeightInput = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.BirthDateInput = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.EmailInput = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.NameInput = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.AllergiesInput = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.BloodTypeInput = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.WeightInput = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.GenderInput = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.PhoneInput = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.ConfirmBtn = new System.Windows.Forms.Button();
             this.CloseBtn = new System.Windows.Forms.Button();
@@ -116,7 +116,7 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.textBox5);
+            this.panel9.Controls.Add(this.SicknessesInput);
             this.panel9.Controls.Add(this.label10);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 200);
@@ -126,15 +126,15 @@
             this.panel9.Size = new System.Drawing.Size(372, 50);
             this.panel9.TabIndex = 6;
             // 
-            // textBox5
+            // SicknessesInput
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(98, 8);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(274, 20);
-            this.textBox5.TabIndex = 1;
+            this.SicknessesInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.SicknessesInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.SicknessesInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SicknessesInput.Location = new System.Drawing.Point(98, 8);
+            this.SicknessesInput.Name = "SicknessesInput";
+            this.SicknessesInput.Size = new System.Drawing.Size(274, 20);
+            this.SicknessesInput.TabIndex = 1;
             // 
             // label10
             // 
@@ -149,7 +149,7 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.textBox3);
+            this.panel7.Controls.Add(this.HeightInput);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 150);
@@ -159,15 +159,15 @@
             this.panel7.Size = new System.Drawing.Size(372, 50);
             this.panel7.TabIndex = 5;
             // 
-            // textBox3
+            // HeightInput
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(98, 8);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(274, 20);
-            this.textBox3.TabIndex = 1;
+            this.HeightInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.HeightInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.HeightInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HeightInput.Location = new System.Drawing.Point(98, 8);
+            this.HeightInput.Name = "HeightInput";
+            this.HeightInput.Size = new System.Drawing.Size(274, 20);
+            this.HeightInput.TabIndex = 1;
             // 
             // label8
             // 
@@ -182,7 +182,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.BirthDateInput);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 100);
@@ -192,17 +192,17 @@
             this.panel3.Size = new System.Drawing.Size(372, 50);
             this.panel3.TabIndex = 3;
             // 
-            // dateTimePicker1
+            // BirthDateInput
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(172, 8);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 27);
-            this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.Value = new System.DateTime(2023, 12, 5, 0, 0, 0, 0);
+            this.BirthDateInput.CustomFormat = "yyyy-MM-dd";
+            this.BirthDateInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BirthDateInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BirthDateInput.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.BirthDateInput.Location = new System.Drawing.Point(172, 8);
+            this.BirthDateInput.Name = "BirthDateInput";
+            this.BirthDateInput.Size = new System.Drawing.Size(200, 27);
+            this.BirthDateInput.TabIndex = 1;
+            this.BirthDateInput.Value = new System.DateTime(2023, 12, 5, 0, 0, 0, 0);
             // 
             // label4
             // 
@@ -217,7 +217,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.EmailInput);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 50);
@@ -227,15 +227,15 @@
             this.panel1.Size = new System.Drawing.Size(372, 50);
             this.panel1.TabIndex = 2;
             // 
-            // textBox1
+            // EmailInput
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(65, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(307, 20);
-            this.textBox1.TabIndex = 1;
+            this.EmailInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.EmailInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.EmailInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailInput.Location = new System.Drawing.Point(65, 8);
+            this.EmailInput.Name = "EmailInput";
+            this.EmailInput.Size = new System.Drawing.Size(307, 20);
+            this.EmailInput.TabIndex = 1;
             // 
             // label2
             // 
@@ -250,7 +250,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.NameInput);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -260,15 +260,15 @@
             this.panel2.Size = new System.Drawing.Size(372, 50);
             this.panel2.TabIndex = 1;
             // 
-            // textBox2
+            // NameInput
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(65, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(307, 20);
-            this.textBox2.TabIndex = 1;
+            this.NameInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.NameInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.NameInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameInput.Location = new System.Drawing.Point(65, 8);
+            this.NameInput.Name = "NameInput";
+            this.NameInput.Size = new System.Drawing.Size(307, 20);
+            this.NameInput.TabIndex = 1;
             // 
             // label3
             // 
@@ -283,7 +283,7 @@
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.textBox7);
+            this.panel10.Controls.Add(this.AllergiesInput);
             this.panel10.Controls.Add(this.label11);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 200);
@@ -293,15 +293,15 @@
             this.panel10.Size = new System.Drawing.Size(372, 50);
             this.panel10.TabIndex = 7;
             // 
-            // textBox7
+            // AllergiesInput
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox7.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(98, 8);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(274, 20);
-            this.textBox7.TabIndex = 1;
+            this.AllergiesInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AllergiesInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.AllergiesInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AllergiesInput.Location = new System.Drawing.Point(98, 8);
+            this.AllergiesInput.Name = "AllergiesInput";
+            this.AllergiesInput.Size = new System.Drawing.Size(274, 20);
+            this.AllergiesInput.TabIndex = 1;
             // 
             // label11
             // 
@@ -316,7 +316,7 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.comboBox2);
+            this.panel8.Controls.Add(this.BloodTypeInput);
             this.panel8.Controls.Add(this.label9);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 150);
@@ -326,21 +326,21 @@
             this.panel8.Size = new System.Drawing.Size(372, 50);
             this.panel8.TabIndex = 5;
             // 
-            // comboBox2
+            // BloodTypeInput
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.BloodTypeInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BloodTypeInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BloodTypeInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BloodTypeInput.FormattingEnabled = true;
+            this.BloodTypeInput.Items.AddRange(new object[] {
             "A",
             "B",
             "AB",
             "O"});
-            this.comboBox2.Location = new System.Drawing.Point(266, 8);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(106, 27);
-            this.comboBox2.TabIndex = 3;
+            this.BloodTypeInput.Location = new System.Drawing.Point(266, 8);
+            this.BloodTypeInput.Name = "BloodTypeInput";
+            this.BloodTypeInput.Size = new System.Drawing.Size(106, 27);
+            this.BloodTypeInput.TabIndex = 3;
             // 
             // label9
             // 
@@ -355,7 +355,7 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.textBox6);
+            this.panel6.Controls.Add(this.WeightInput);
             this.panel6.Controls.Add(this.label7);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 100);
@@ -365,15 +365,15 @@
             this.panel6.Size = new System.Drawing.Size(372, 50);
             this.panel6.TabIndex = 4;
             // 
-            // textBox6
+            // WeightInput
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox6.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(98, 8);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(274, 20);
-            this.textBox6.TabIndex = 1;
+            this.WeightInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.WeightInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.WeightInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WeightInput.Location = new System.Drawing.Point(98, 8);
+            this.WeightInput.Name = "WeightInput";
+            this.WeightInput.Size = new System.Drawing.Size(274, 20);
+            this.WeightInput.TabIndex = 1;
             // 
             // label7
             // 
@@ -388,7 +388,7 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Controls.Add(this.GenderInput);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 50);
@@ -398,20 +398,20 @@
             this.panel5.Size = new System.Drawing.Size(372, 50);
             this.panel5.TabIndex = 3;
             // 
-            // comboBox1
+            // GenderInput
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.GenderInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.GenderInput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GenderInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GenderInput.FormattingEnabled = true;
+            this.GenderInput.Items.AddRange(new object[] {
             "Male",
             "Female",
             "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(266, 8);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(106, 27);
-            this.comboBox1.TabIndex = 2;
+            this.GenderInput.Location = new System.Drawing.Point(266, 8);
+            this.GenderInput.Name = "GenderInput";
+            this.GenderInput.Size = new System.Drawing.Size(106, 27);
+            this.GenderInput.TabIndex = 2;
             // 
             // label6
             // 
@@ -426,7 +426,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.PhoneInput);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -436,15 +436,15 @@
             this.panel4.Size = new System.Drawing.Size(372, 50);
             this.panel4.TabIndex = 2;
             // 
-            // textBox4
+            // PhoneInput
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.textBox4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(136, 8);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(236, 20);
-            this.textBox4.TabIndex = 1;
+            this.PhoneInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PhoneInput.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PhoneInput.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneInput.Location = new System.Drawing.Point(136, 8);
+            this.PhoneInput.Name = "PhoneInput";
+            this.PhoneInput.Size = new System.Drawing.Size(236, 20);
+            this.PhoneInput.TabIndex = 1;
             // 
             // label5
             // 
@@ -495,7 +495,9 @@
             this.Controls.Add(this.ConfirmBtn);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 500);
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "AddPatientForm";
             this.Text = "AddDoctorForm";
@@ -535,34 +537,34 @@
         private System.Windows.Forms.Button ConfirmBtn;
         private System.Windows.Forms.Button CloseBtn;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox NameInput;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox EmailInput;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox WeightInput;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox PhoneInput;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox GenderInput;
+        private System.Windows.Forms.DateTimePicker BirthDateInput;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox HeightInput;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox BloodTypeInput;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox SicknessesInput;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox AllergiesInput;
         private System.Windows.Forms.Label label11;
     }
 }

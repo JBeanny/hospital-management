@@ -9,5 +9,14 @@ namespace HospitalManagement.Models
         public Doctor Doctor { get; set; }
         public Patient Patient { get; set; }
         public Room Room { get; set; }
+
+        public Consultant(ObjectId Id, string date, Doctor doctor, Patient patient, Room room)
+        {
+            this.Id = Id;
+            this.Date = date;
+            this.Doctor = doctor;
+            this.Patient = patient;
+            this.Room = room;
+        }
     }
 }

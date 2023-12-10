@@ -31,16 +31,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.PatientForm = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.DateForm = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.RoomForm = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.DoctorForm = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.ConfirmBtn = new System.Windows.Forms.Button();
             this.CloseBtn = new System.Windows.Forms.Button();
@@ -86,7 +86,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.PatientForm);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 50);
@@ -96,16 +96,16 @@
             this.panel1.Size = new System.Drawing.Size(372, 50);
             this.panel1.TabIndex = 3;
             // 
-            // comboBox1
+            // PatientForm
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(148, 8);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(224, 27);
-            this.comboBox1.TabIndex = 3;
+            this.PatientForm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.PatientForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PatientForm.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientForm.FormattingEnabled = true;
+            this.PatientForm.Location = new System.Drawing.Point(148, 8);
+            this.PatientForm.Name = "PatientForm";
+            this.PatientForm.Size = new System.Drawing.Size(224, 27);
+            this.PatientForm.TabIndex = 3;
             // 
             // label2
             // 
@@ -120,7 +120,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dateTimePicker2);
+            this.panel2.Controls.Add(this.DateForm);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -130,17 +130,17 @@
             this.panel2.Size = new System.Drawing.Size(372, 50);
             this.panel2.TabIndex = 1;
             // 
-            // dateTimePicker2
+            // DateForm
             // 
-            this.dateTimePicker2.CustomFormat = "yyyy-MM-dd hh:mm";
-            this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(163, 8);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(209, 27);
-            this.dateTimePicker2.TabIndex = 2;
-            this.dateTimePicker2.Value = new System.DateTime(2023, 12, 5, 0, 0, 0, 0);
+            this.DateForm.CustomFormat = "yyyy-MM-dd hh:mm";
+            this.DateForm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.DateForm.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateForm.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateForm.Location = new System.Drawing.Point(163, 8);
+            this.DateForm.Name = "DateForm";
+            this.DateForm.Size = new System.Drawing.Size(209, 27);
+            this.DateForm.TabIndex = 2;
+            this.DateForm.Value = new System.DateTime(2023, 12, 5, 0, 0, 0, 0);
             // 
             // label3
             // 
@@ -155,7 +155,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.comboBox3);
+            this.panel3.Controls.Add(this.RoomForm);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 50);
@@ -165,16 +165,16 @@
             this.panel3.Size = new System.Drawing.Size(372, 50);
             this.panel3.TabIndex = 3;
             // 
-            // comboBox3
+            // RoomForm
             // 
-            this.comboBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(148, 8);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(224, 27);
-            this.comboBox3.TabIndex = 3;
+            this.RoomForm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.RoomForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RoomForm.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoomForm.FormattingEnabled = true;
+            this.RoomForm.Location = new System.Drawing.Point(148, 8);
+            this.RoomForm.Name = "RoomForm";
+            this.RoomForm.Size = new System.Drawing.Size(224, 27);
+            this.RoomForm.TabIndex = 3;
             // 
             // label4
             // 
@@ -189,7 +189,7 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.DoctorForm);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
@@ -199,16 +199,16 @@
             this.panel4.Size = new System.Drawing.Size(372, 50);
             this.panel4.TabIndex = 2;
             // 
-            // comboBox2
+            // DoctorForm
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(148, 8);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(224, 27);
-            this.comboBox2.TabIndex = 3;
+            this.DoctorForm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.DoctorForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DoctorForm.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoctorForm.FormattingEnabled = true;
+            this.DoctorForm.Location = new System.Drawing.Point(148, 8);
+            this.DoctorForm.Name = "DoctorForm";
+            this.DoctorForm.Size = new System.Drawing.Size(224, 27);
+            this.DoctorForm.TabIndex = 3;
             // 
             // label5
             // 
@@ -290,13 +290,13 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DateTimePicker DateForm;
+        private System.Windows.Forms.ComboBox DoctorForm;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox PatientForm;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox RoomForm;
         private System.Windows.Forms.Label label4;
     }
 }

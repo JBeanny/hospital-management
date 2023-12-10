@@ -1,4 +1,6 @@
-﻿namespace HospitalManagement.Components
+﻿using System.Windows.Forms;
+
+namespace HospitalManagement.Components
 {
     partial class Information
     {
@@ -49,6 +51,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label InformationLabel;
+        private Label InformationLabel;
     }
 }
