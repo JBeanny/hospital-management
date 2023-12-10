@@ -1,8 +1,10 @@
 ﻿using hospital_management_system.Service;
 using HospitalManagement.Models;
 using MongoDB.Bson;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace HospitalManagement.Services
 {
@@ -35,6 +37,12 @@ namespace HospitalManagement.Services
         public void modifyConsultation(ObjectId consultationId, Consultant consultationToModify)
         {
             _mongoDBService.UpdateDocument<Consultant>(_document, consultationId, consultationToModify);
+        }
+
+        public List<Consultant> getConsultationByRoomId(ObjectId room_id)
+        {
+            List<Consultant> consultants = this.getConsultations();
+            return consultants.Where(c => c.Room.Id == room_id).ToList();
         }
 
         public Consultant getConsultationByConsultationId(string consultation_id)

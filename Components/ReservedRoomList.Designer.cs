@@ -38,10 +38,11 @@
             this.DateLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(27)))), ((int)(((byte)(27)))));
             this.DateLabel.Location = new System.Drawing.Point(8, 8);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(161, 34);
+            this.DateLabel.Size = new System.Drawing.Size(184, 34);
             this.DateLabel.TabIndex = 0;
             this.DateLabel.Text = "2023-12-05 12:30:00";
             this.DateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DateLabel.Click += new System.EventHandler(this.DateLabel_Click);
             // 
             // ReservedRoomList
             // 
@@ -51,7 +52,7 @@
             this.Controls.Add(this.DateLabel);
             this.Name = "ReservedRoomList";
             this.Padding = new System.Windows.Forms.Padding(8);
-            this.Size = new System.Drawing.Size(177, 50);
+            this.Size = new System.Drawing.Size(200, 50);
             this.ResumeLayout(false);
 
         }

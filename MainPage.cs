@@ -28,6 +28,9 @@ namespace HospitalManagement
 
         // selected
         private dynamic selectedModel = null;
+        // selected consultant
+        private ReservedRoomList currentReserve = null;
+        private dynamic selectedConsultant = null;
 
         public HomePage()
         {
@@ -41,7 +44,12 @@ namespace HospitalManagement
             {
                 if (AddConsultantForm == null || AddConsultantForm.IsDisposed)
                 {
-                    AddConsultantForm = new AddConsultantForm(selectedModel, Doctors, Patients, Rooms);
+                    if (selectedConsultant == null)
+                    {
+                        MessageBox.Show("Consultant is not selected", "Please select a consultant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    AddConsultantForm = new AddConsultantForm(selectedConsultant, Doctors, Patients, Rooms);
                     AddConsultantForm.Show();
                 }
             }
@@ -50,6 +58,11 @@ namespace HospitalManagement
             {
                 if (AddDoctorForm == null || AddDoctorForm.IsDisposed)
                 {
+                    if (selectedModel == null)
+                    {
+                        MessageBox.Show("Doctor is not selected", "Please select a doctor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                     AddDoctorForm = new AddDoctorForm(selectedModel);
                     AddDoctorForm.Show();
                 }
@@ -59,6 +72,11 @@ namespace HospitalManagement
             {
                 if (AddPatientForm == null || AddPatientForm.IsDisposed)
                 {
+                    if (selectedModel == null)
+                    {
+                        MessageBox.Show("Patient is not selected", "Please select a patient", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                     AddPatientForm = new AddPatientForm(selectedModel);
                     AddPatientForm.Show();
                 }
@@ -87,7 +105,25 @@ namespace HospitalManagement
                 selectedModel = Object;
                 if (currentPage == "Rooms")
                 {
+                    Room room = (Room)selectedModel;
+                    Consultants = ConsultantService.getConsultationByRoomId(room.Id);
 
+                    Consultants.ForEach(consultant =>
+                    {
+                        ReservedRoomList reservedRoomList = new ReservedRoomList() { Date = consultant.Date };
+                        reservedRoomList.OnSelect += (_reserve_room, _event) =>
+                        {
+                            if (currentReserve != null)
+                            {
+                                this.currentReserve.BackColor = ColorTranslator.FromHtml("#fee2e2");
+                            }
+
+                            reservedRoomList.BackColor = ColorTranslator.FromHtml("#f9a8d4");
+                            this.currentReserve = reservedRoomList;
+                            this.selectedConsultant = consultant;
+                        };
+                        RightPanel.Controls.Add(reservedRoomList);
+                    });
                 }
                 if (currentPage == "Doctors")
                 {
@@ -127,6 +163,8 @@ namespace HospitalManagement
 
         private void ActiveMenu()
         {
+            this.EditButton.Show();
+            this.DeleteButton.Show();
             if (currentPage == "Rooms")
             {
                 ListPanel.Controls.Clear();
@@ -167,21 +205,24 @@ namespace HospitalManagement
         private void initialLoadData(object sender, EventArgs e)
         {
             timer1.Stop();
+            this.EditButton.Hide();
+            this.DeleteButton.Hide();
+            currentPage = "Home";
+            ReservedHeadingPanel.Hide();
             Doctors = DoctorService.getDoctors();
             Patients = PatientService.getPatients();
             Rooms = RoomService.getRooms();
-            Consultants = ConsultantService.getConsultations();
         }
         private void RoomMenuButton(object sender, EventArgs e)
         {
             currentPage = "Rooms";
             ActiveMenu();
-            Consultants = ConsultantService.getConsultations();
+            Rooms = RoomService.getRooms();
 
             // Add Room Data
-            Consultants.ForEach(consultant =>
+            Rooms.ForEach(room =>
             {
-                AddItem("Room", "Room: " + consultant.Room.number, "room.jpg", consultant.Room.number, consultant);
+                AddItem("Room", room.number, "room.jpg", room.number, room);
             });
 
         }
@@ -259,16 +300,21 @@ namespace HospitalManagement
             {
                 if (DeleteForm == null || DeleteForm.IsDisposed)
                 {
+                    if (selectedConsultant == null)
+                    {
+                        MessageBox.Show("Consultant is not selected", "Please select a consultant", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                     DeleteForm = new DeleteForm();
                     DeleteForm.OnDelete += (ss, ee) =>
                     {
-                        if (selectedModel == null)
+                        if (selectedConsultant == null)
                         {
                             MessageBox.Show("No consultant is selected", "Delete Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
 
-                        Consultant existedConsultant = ConsultantService.getConsultation(selectedModel.Id);
+                        Consultant existedConsultant = ConsultantService.getConsultation(selectedConsultant.Id);
 
                         if (existedConsultant == null)
                         {
@@ -286,6 +332,11 @@ namespace HospitalManagement
             {
                 if (DeleteForm == null || DeleteForm.IsDisposed)
                 {
+                    if (selectedModel == null)
+                    {
+                        MessageBox.Show("Doctor is not selected", "Please select a doctor", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                     DeleteForm = new DeleteForm();
                     DeleteForm.OnDelete += (ss, ee) =>
                     {
@@ -313,6 +364,11 @@ namespace HospitalManagement
             {
                 if (DeleteForm == null || DeleteForm.IsDisposed)
                 {
+                    if (selectedModel == null)
+                    {
+                        MessageBox.Show("Patient is not selected", "Please select a patient", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
                     DeleteForm = new DeleteForm();
                     DeleteForm.OnDelete += (ss, ee) =>
                     {

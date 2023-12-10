@@ -74,7 +74,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(0, 16, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(250, 561);
+            this.panel1.Size = new System.Drawing.Size(250, 661);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -87,7 +87,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 83);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.panel2.Size = new System.Drawing.Size(250, 478);
+            this.panel2.Size = new System.Drawing.Size(250, 578);
             this.panel2.TabIndex = 2;
             // 
             // Add
@@ -100,7 +100,7 @@
             this.Add.IconChar = FontAwesome.Sharp.IconChar.PlusCircle;
             this.Add.IconColor = System.Drawing.Color.White;
             this.Add.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Add.Location = new System.Drawing.Point(0, 424);
+            this.Add.Location = new System.Drawing.Point(0, 524);
             this.Add.Margin = new System.Windows.Forms.Padding(0);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(250, 54);
@@ -216,8 +216,8 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.White;
             this.splitContainer1.Panel2.Controls.Add(this.panel3);
-            this.splitContainer1.Size = new System.Drawing.Size(844, 561);
-            this.splitContainer1.SplitterDistance = 610;
+            this.splitContainer1.Size = new System.Drawing.Size(984, 661);
+            this.splitContainer1.SplitterDistance = 722;
             this.splitContainer1.SplitterWidth = 1;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -226,7 +226,7 @@
             this.ListPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListPanel.Location = new System.Drawing.Point(0, 62);
             this.ListPanel.Name = "ListPanel";
-            this.ListPanel.Size = new System.Drawing.Size(610, 499);
+            this.ListPanel.Size = new System.Drawing.Size(722, 599);
             this.ListPanel.TabIndex = 0;
             // 
             // panel4
@@ -238,7 +238,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(16);
-            this.panel4.Size = new System.Drawing.Size(610, 62);
+            this.panel4.Size = new System.Drawing.Size(722, 62);
             this.panel4.TabIndex = 1;
             // 
             // iconPictureBox2
@@ -278,7 +278,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Padding = new System.Windows.Forms.Padding(8, 16, 8, 8);
-            this.panel3.Size = new System.Drawing.Size(233, 561);
+            this.panel3.Size = new System.Drawing.Size(261, 661);
             this.panel3.TabIndex = 0;
             // 
             // RightPanel
@@ -289,7 +289,7 @@
             this.RightPanel.Location = new System.Drawing.Point(8, 145);
             this.RightPanel.Name = "RightPanel";
             this.RightPanel.Padding = new System.Windows.Forms.Padding(0, 16, 0, 0);
-            this.RightPanel.Size = new System.Drawing.Size(217, 408);
+            this.RightPanel.Size = new System.Drawing.Size(245, 508);
             this.RightPanel.TabIndex = 5;
             // 
             // ReservedHeadingPanel
@@ -300,7 +300,7 @@
             this.ReservedHeadingPanel.Location = new System.Drawing.Point(8, 110);
             this.ReservedHeadingPanel.Name = "ReservedHeadingPanel";
             this.ReservedHeadingPanel.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            this.ReservedHeadingPanel.Size = new System.Drawing.Size(217, 35);
+            this.ReservedHeadingPanel.Size = new System.Drawing.Size(245, 35);
             this.ReservedHeadingPanel.TabIndex = 4;
             // 
             // label2
@@ -346,7 +346,7 @@
             this.DeleteButton.Location = new System.Drawing.Point(8, 80);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(8);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(217, 30);
+            this.DeleteButton.Size = new System.Drawing.Size(245, 30);
             this.DeleteButton.TabIndex = 7;
             this.DeleteButton.Text = "Delete";
             this.DeleteButton.UseVisualStyleBackColor = false;
@@ -368,7 +368,7 @@
             this.EditButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EditButton.Location = new System.Drawing.Point(8, 50);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(217, 30);
+            this.EditButton.Size = new System.Drawing.Size(245, 30);
             this.EditButton.TabIndex = 6;
             this.EditButton.Text = "Edit";
             this.EditButton.UseVisualStyleBackColor = false;
@@ -380,7 +380,7 @@
             this.RightLabel.Location = new System.Drawing.Point(8, 16);
             this.RightLabel.Name = "RightLabel";
             this.RightLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 16);
-            this.RightLabel.Size = new System.Drawing.Size(217, 34);
+            this.RightLabel.Size = new System.Drawing.Size(245, 34);
             this.RightLabel.TabIndex = 0;
             this.RightLabel.Text = "Room";
             // 
@@ -390,7 +390,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(1094, 561);
+            this.ClientSize = new System.Drawing.Size(1234, 661);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
