@@ -169,6 +169,9 @@ namespace HospitalManagement
             this.DeleteButton.Show();
             if (currentPage == "Rooms")
             {
+                selectedModel = null;
+                selectedConsultant = null;
+
                 ListPanel.Controls.Clear();
                 RightPanel.Controls.Clear();
                 RightLabel.Text = "Room";
@@ -181,6 +184,7 @@ namespace HospitalManagement
 
             if (currentPage == "Doctors")
             {
+                selectedModel = null;
                 ListPanel.Controls.Clear();
                 RightLabel.Text = "Doctors";
                 ReservedHeadingPanel.Hide();
@@ -193,6 +197,7 @@ namespace HospitalManagement
 
             if (currentPage == "Patients")
             {
+                selectedModel = null;
                 ListPanel.Controls.Clear();
                 RightLabel.Text = "Patients";
                 ReservedHeadingPanel.Hide();
