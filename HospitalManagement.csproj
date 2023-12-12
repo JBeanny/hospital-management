@@ -228,6 +228,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Components\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <Compile Include="Services\ConsultantService.cs" />
     <Compile Include="Services\DoctorService.cs" />
