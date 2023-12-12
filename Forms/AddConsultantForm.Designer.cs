@@ -57,10 +57,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(215, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(354, 29);
+            this.label1.Size = new System.Drawing.Size(352, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Consultant Registration Form";
             // 
@@ -100,21 +100,21 @@
             // 
             this.PatientForm.Dock = System.Windows.Forms.DockStyle.Right;
             this.PatientForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PatientForm.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PatientForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PatientForm.FormattingEnabled = true;
             this.PatientForm.Location = new System.Drawing.Point(148, 8);
             this.PatientForm.Name = "PatientForm";
-            this.PatientForm.Size = new System.Drawing.Size(224, 27);
+            this.PatientForm.Size = new System.Drawing.Size(224, 28);
             this.PatientForm.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(0, 8);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 19);
+            this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Patient";
             // 
@@ -134,11 +134,11 @@
             // 
             this.DateForm.CustomFormat = "yyyy-MM-dd hh:mm";
             this.DateForm.Dock = System.Windows.Forms.DockStyle.Right;
-            this.DateForm.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateForm.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DateForm.Location = new System.Drawing.Point(163, 8);
             this.DateForm.Name = "DateForm";
-            this.DateForm.Size = new System.Drawing.Size(209, 27);
+            this.DateForm.Size = new System.Drawing.Size(209, 26);
             this.DateForm.TabIndex = 2;
             this.DateForm.Value = new System.DateTime(2023, 12, 5, 0, 0, 0, 0);
             // 
@@ -146,10 +146,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(0, 8);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 19);
+            this.label3.Size = new System.Drawing.Size(44, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Date";
             // 
@@ -169,21 +169,21 @@
             // 
             this.RoomForm.Dock = System.Windows.Forms.DockStyle.Right;
             this.RoomForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RoomForm.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoomForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RoomForm.FormattingEnabled = true;
             this.RoomForm.Location = new System.Drawing.Point(148, 8);
             this.RoomForm.Name = "RoomForm";
-            this.RoomForm.Size = new System.Drawing.Size(224, 27);
+            this.RoomForm.Size = new System.Drawing.Size(224, 28);
             this.RoomForm.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(0, 8);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 19);
+            this.label4.Size = new System.Drawing.Size(52, 20);
             this.label4.TabIndex = 0;
             this.label4.Text = "Room";
             // 
@@ -203,21 +203,21 @@
             // 
             this.DoctorForm.Dock = System.Windows.Forms.DockStyle.Right;
             this.DoctorForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DoctorForm.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DoctorForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DoctorForm.FormattingEnabled = true;
             this.DoctorForm.Location = new System.Drawing.Point(148, 8);
             this.DoctorForm.Name = "DoctorForm";
-            this.DoctorForm.Size = new System.Drawing.Size(224, 27);
+            this.DoctorForm.Size = new System.Drawing.Size(224, 28);
             this.DoctorForm.TabIndex = 3;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(0, 8);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 19);
+            this.label5.Size = new System.Drawing.Size(57, 20);
             this.label5.TabIndex = 0;
             this.label5.Text = "Doctor";
             // 
@@ -226,7 +226,7 @@
             this.ConfirmBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(102)))), ((int)(((byte)(241)))));
             this.ConfirmBtn.FlatAppearance.BorderSize = 0;
             this.ConfirmBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ConfirmBtn.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConfirmBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(231)))), ((int)(((byte)(255)))));
             this.ConfirmBtn.Location = new System.Drawing.Point(666, 412);
             this.ConfirmBtn.Name = "ConfirmBtn";
@@ -240,7 +240,7 @@
             this.CloseBtn.BackColor = System.Drawing.Color.White;
             this.CloseBtn.FlatAppearance.BorderSize = 0;
             this.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CloseBtn.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CloseBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CloseBtn.Location = new System.Drawing.Point(548, 412);
             this.CloseBtn.Name = "CloseBtn";
             this.CloseBtn.Size = new System.Drawing.Size(106, 37);
